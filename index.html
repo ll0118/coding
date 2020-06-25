@@ -261,6 +261,156 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ll0118.github.io/2020/06/25/coding%E7%AC%AC%E4%BA%8C%E5%A4%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luLv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ll0118">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/25/coding%E7%AC%AC%E4%BA%8C%E5%A4%A9/" itemprop="url">coding第二天</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-25T11:43:58+08:00">
+                2020-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: coding第二天<br>date: 2020-06-25 11:43:58<br>tags:</p>
+<hr>
+<h1 id="记录编码第二天"><a href="#记录编码第二天" class="headerlink" title="记录编码第二天"></a>记录编码第二天</h1><h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><ul>
+<li>今天学习了如何用Hexo搭建GitHub博客，并且学会了如何初步设置Next主题。</li>
+<li>hexo常用命令：</li>
+</ul>
+<pre><code>hexo n &quot;博客名称&quot;  =&gt; hexo new &quot;博客名称&quot;   #这两个都是创建新文章，前者是简写模式
+$ hexo p  =&gt; hexo publish
+$ hexo g  =&gt; hexo generate  #生成
+$ hexo s  =&gt; hexo server  #启动服务预览
+$ hexo d  =&gt; hexo deploy  #部署
+$ hexo server   #Hexo 会监视文件变动并自动更新，无须重启服务器。
+$ hexo server -s   #静态模式
+$ hexo server -p 5000   #更改端口
+$ hexo server -i 192.168.1.1   #自定义IP
+$ hexo clean   #清除缓存，网页正常情况下可以忽略此条命令</code></pre><h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2><ul>
+<li><p>求最大公约数和最小公倍数</p>
+<p>最大公约数*最小公倍数=两个数的乘积</p>
+<p>辗转相除法：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()   &#x2F;*  辗转相除法求最大公约数 *&#x2F; </span><br><span class="line">&#123; </span><br><span class="line">	int m, n, a, b, c;</span><br><span class="line">	scanf(&quot;%d%d&quot;, &amp;a, &amp;b);</span><br><span class="line">	m&#x3D;a; </span><br><span class="line">	n&#x3D;b;</span><br><span class="line">	while(b!&#x3D;0)  &#x2F;* 余数不为0，继续相除，直到余数为0 *&#x2F; </span><br><span class="line">	&#123; </span><br><span class="line">		c&#x3D;a%b;	</span><br><span class="line">		a&#x3D;b; </span><br><span class="line">		b&#x3D;c;</span><br><span class="line">	&#125;</span><br><span class="line">	&#x2F;*  最大公约数为 a *&#x2F;</span><br><span class="line">	&#x2F;*  最小公倍数为 m*n&#x2F;a *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>关于循环</p>
+<p><strong>for</strong>循环n次从0开始时注意约束条件是小于n</p>
+<p><strong>for</strong>循环中，<strong>continue</strong>语句执行后自增语句仍然会执行。</p>
+<p><img src="/images/c-continue-statement-works.jpg" alt="C-continue用法"></p>
+</li>
+</ul>
+<p><em>2020/6/25</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://ll0118.github.io/2020/06/25/coding%E7%AC%AC%E4%B8%80%E5%A4%A9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -421,7 +571,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
